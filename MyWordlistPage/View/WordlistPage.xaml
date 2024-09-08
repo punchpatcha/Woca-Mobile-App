@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyWordlistPage.Model"
+             x:Class="MyWordlistPage.View.WordlistPage"
+             
+             Title="Wordlist" >
+    
+    <ContentPage.BindingContext>
+        <local:ShowWordlistData />
+    </ContentPage.BindingContext>
+
+    <ScrollView VerticalOptions="Fill">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" RowDefinitions="*,*" ColumnDefinitions="Auto,Auto" 
+                  HorizontalOptions="Center" ColumnSpacing="10" >
+                <!--Level A-->
+                <ImageButton Source="levela_btn.png"
+                             x:Name="LevelA"
+                             Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"
+                            HeightRequest="368"
+                            WidthRequest="168"
+                            CornerRadius="20"
+                            Clicked="LevelAButtonClicked"/>
+
+                <!--Level B-->
+                <ImageButton Source="levelb_btn.png"
+                             x:Name="LevelB"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            HeightRequest="175"
+                            WidthRequest="180"
+
+                            Clicked="LevelBButtonClicked"/>
+
+                <!--Level C-->
+                <ImageButton Source="levelc_btn.png"
+                               x:Name="LevelC"
+                              Grid.Column="1"
+                              Grid.Row="1"
+                              HeightRequest="175"
+                              WidthRequest="180"
+
+                              Clicked="LevelCButtonClicked"/>
+            </Grid>
+
+            <!--For My Wordlist Page-->
+            <BoxView Grid.Row="1"
+                      Grid.ColumnSpan="2"
+                      Color="White" />
+            <Label Grid.Row="1"
+                    Grid.ColumnSpan="2" 
+                    Text="My Wordlist" FontAttributes="Bold" FontSize="20" Margin="20,20,0,10"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center" />
+
+            <Grid Grid.Row="2" RowDefinitions="Auto,Auto,Auto,Auto" ColumnDefinitions="*,*" 
+                  Grid.ColumnSpan="2" RowSpacing="20" Margin="10" >
+
+                <Button Text="{Binding ButtonText1}" BackgroundColor="{Binding ButtonColor1} " AutomationId="1" Clicked="OnDictionaryButtonClicked" 
+                        Grid.Row="0"  Grid.ColumnSpan="2" HeightRequest="100" FontSize="Large"
+                        FontAttributes="Bold" />
+                <Button Text="{Binding ButtonText2}" BackgroundColor="{Binding ButtonColor2} " AutomationId="2" Clicked="OnDictionaryButtonClicked" 
+                         Grid.Row="1"  Grid.ColumnSpan="2"  HeightRequest="100" FontSize="Large"
+                        FontAttributes="Bold" />
+                <Button Text="{Binding ButtonText3}"  BackgroundColor="{Binding ButtonColor3}" AutomationId="3" Clicked="OnDictionaryButtonClicked"
+                         Grid.Row="2"  Grid.ColumnSpan="2"  HeightRequest="100" FontSize="Large"
+                        FontAttributes="Bold" />
+                <Button Text="{Binding ButtonText4}" BackgroundColor="{Binding ButtonColor4}"  AutomationId="4" Clicked="OnDictionaryButtonClicked" 
+                         Grid.Row="3"  Grid.ColumnSpan="2"  HeightRequest="100" FontSize="Large"
+                        FontAttributes="Bold" />
+
+            </Grid>
+
+
+        </Grid>
+    </ScrollView>
+    
+        
+</ContentPage>

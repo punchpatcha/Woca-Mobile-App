@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            
+            xmlns:views="clr-namespace:MyWordlistPage.View" 
+             
+            x:Class="MyWordlistPage.View.Woca"
+            
+            xmlns:android="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific;assembly=Microsoft.Maui.Controls"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+    
+    <!--TappedBar-->
+    
+    <!--คลังคำศัพท์-->
+    <NavigationPage Title="คลังคำศัพท์" IconImageSource="wordlist_icon" 
+                    BarTextColor="Black" BarBackground="White" >
+
+        <x:Arguments>
+            <views:WordlistPage/> <!--คลังคำศัพท์-->
+        </x:Arguments>
+
+    </NavigationPage>
+
+    <NavigationPage Title="การ์ดท่องคำศัพท์" IconImageSource="flashcard_icon" BarTextColor="Black" BarBackground="White">
+
+        <x:Arguments>
+            <views:FlashCardPage/>  <!--การ์ดท่องคำศัพท์-->
+        </x:Arguments>
+
+    </NavigationPage>
+    
+
+
+</TabbedPage>

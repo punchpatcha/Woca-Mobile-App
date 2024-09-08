@@ -1,0 +1,115 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyWordlistPage
+build_property.ProjectDir = D:\Punch\mobile\MyWordlistPage\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/Punch/mobile/MyWordlistPage/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Punch/mobile/MyWordlistPage/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Punch/mobile/MyWordlistPage/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Punch/mobile/MyWordlistPage/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/AddNameWordlistPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.AddNameWordlistPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\AddNameWordlistPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\AddNameWordlistPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/AddWordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.AddWordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\AddWordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\AddWordPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/CreateWordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.CreateWordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\CreateWordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\CreateWordPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/FlashCardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.FlashCardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\FlashCardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\FlashCardPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/Flashcard/FlashcardMywordlist.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.Flashcard.FlashcardMywordlist.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Flashcard\FlashcardMywordlist.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Flashcard\FlashcardMywordlist.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/Flashcard/FlashcardWordlist.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.Flashcard.FlashcardWordlist.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Flashcard\FlashcardWordlist.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Flashcard\FlashcardWordlist.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/WelcomPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.WelcomPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\WelcomPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\WelcomPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/Woca.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.Woca.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Woca.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Woca.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/WordlistPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.WordlistPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\WordlistPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\WordlistPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/Wordlist/LevelAPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.Wordlist.LevelAPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Wordlist\LevelAPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Wordlist\LevelAPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/Wordlist/LevelBPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.Wordlist.LevelBPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Wordlist\LevelBPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Wordlist\LevelBPage.xaml
+
+[D:/Punch/mobile/MyWordlistPage/View/Wordlist/LevelCPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MyWordlistPage.View.Wordlist.LevelCPage.xaml
+build_metadata.AdditionalFiles.TargetPath = View\Wordlist\LevelCPage.xaml
+build_metadata.AdditionalFiles.RelativePath = View\Wordlist\LevelCPage.xaml

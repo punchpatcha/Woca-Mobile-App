@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyWordlistPage.Model"
+             x:Class="MyWordlistPage.View.FlashCardPage"
+             Title="FlashCard">
+    
+    <ContentPage.BindingContext>
+        <local:ShowWordlistData />
+    </ContentPage.BindingContext>
+    
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" HorizontalOptions="Center" FontSize="Medium" FontFamily="Prompt-Regular"
+               Text="เลือกคลังคำศัพท์ของคุณ" TextColor="Black" Margin="20" FontAttributes="Bold"/>
+
+            <Grid  Grid.Row="1" RowDefinitions="Auto,Auto,Auto"
+               RowSpacing="20">
+
+                <!--A Level-->
+                <ImageButton Source="a_btn.png"
+                          x:Name="LevelA"
+                          Grid.Row="0"
+                          WidthRequest="297"
+                          Clicked="OnImageButtonClicked"/>
+
+                <!--B Level-->
+                <ImageButton Source="b_btn.png" 
+                          x:Name="LevelB"
+                          Grid.Row="1"
+                          WidthRequest="297"
+                          Clicked="OnImageButtonClicked"/>
+
+                <!--C Level-->
+                <ImageButton Source="c_btn.png" 
+                          x:Name="LevelC"
+                          Grid.Row="2"
+                          WidthRequest="297"
+                          Clicked="OnImageButtonClicked"/>
+            </Grid>
+            
+            <!--My Wordlist-->
+            <Grid  Grid.Row="2" RowDefinitions="Auto,Auto,Auto,Auto" Margin="30" >
+
+                <StackLayout x:Name="WordlistContainer" Spacing="20" HeightRequest="400" WidthRequest="200" >
+                      
+                    <Button Text="{Binding ButtonText1}" BackgroundColor="{Binding ButtonColor1}" AutomationId="1" Clicked="OnDictionaryButtonClicked" 
+                        Grid.Row="0"  Grid.ColumnSpan="2" 
+                            FontSize="Large"  Margin="0,0,0,20"/>
+                    <Button Text="{Binding ButtonText2}" BackgroundColor="{Binding ButtonColor2}" AutomationId="2" Clicked="OnDictionaryButtonClicked" 
+                        Grid.Row="1"  Grid.ColumnSpan="2"  FontSize="Large" FontAttributes="Bold"
+                            Margin="0,0,0,20"  WidthRequest="100"/>
+                    <Button Text="{Binding ButtonText3}" BackgroundColor="{Binding ButtonColor3}" AutomationId="3" Clicked="OnDictionaryButtonClicked"
+                        Grid.Row="2"  Grid.ColumnSpan="2"  FontSize="Large" FontAttributes="Bold"
+                            Margin="0,0,0,20"  WidthRequest="100"/>
+                    <Button Text="{Binding ButtonText4}" BackgroundColor="{Binding ButtonColor4}" AutomationId="4" Clicked="OnDictionaryButtonClicked" 
+                        Grid.Row="3"  Grid.ColumnSpan="2"  FontSize="Large" FontAttributes="Bold" 
+                           Margin="0,0,0,20"   WidthRequest="100"/>
+                </StackLayout>
+            </Grid>
+
+        </Grid>
+
+    </ScrollView>
+    
+</ContentPage>

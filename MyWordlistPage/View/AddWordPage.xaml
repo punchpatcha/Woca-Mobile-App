@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWordlistPage.View.AddWordPage"
+             Title="Add Word">
+
+    <ScrollView VerticalOptions="Fill">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!--Word-->
+            <Grid Grid.Row="0" RowDefinitions="Auto,*" ColumnDefinitions="*,*" Grid.ColumnSpan="2" Margin="30,30,30,0">
+
+                <Label Text="คำศัพท์" Grid.Row="0" Grid.ColumnSpan="2" FontAttributes="Bold"/>
+
+                <Border HorizontalOptions="Start" WidthRequest="350" Margin="0,30,20,0">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15,15,15,15" />
+                    </Border.StrokeShape>
+                    <Entry Placeholder="Word" x:Name="wordEntry" Margin="5" />
+                </Border>
+            </Grid>
+
+            <!--Type-->
+            <Grid Grid.Row="1" RowDefinitions="Auto,*" ColumnDefinitions="*,*" Grid.ColumnSpan="2" Margin="30,30,30,0">
+                <Label Text="ประเภท" Grid.Row="0" Grid.ColumnSpan="2"
+                    FontAttributes="Bold"/>
+                <Border HorizontalOptions="Start" WidthRequest="350" Margin="0,30,20,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15,15,15,15" />
+                </Border.StrokeShape>
+                    <Entry Placeholder="Type" x:Name="typeEntry"  Margin="5"  />
+                </Border>
+            </Grid>
+
+            <!--Meaning-->
+            <Grid Grid.Row="2" RowDefinitions="Auto,*" ColumnDefinitions="*,*" Grid.ColumnSpan="2" Margin="30,30,30,0">
+
+                <Label Text="คำแปล" Grid.Row="0" Grid.ColumnSpan="2"
+                    FontAttributes="Bold"/>
+                <Border HorizontalOptions="Start" WidthRequest="350" 
+                     Margin="0,30,20,0" HeightRequest="150">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15,15,15,15" />
+                    </Border.StrokeShape>
+                    <!-- Entry เพื่อกรอกคำแปล -->
+                    <Entry Placeholder="Translation" x:Name="translationEntry"  Margin="5"  />
+                </Border>
+            </Grid>
+
+            <!--Save Button-->
+            <Grid Grid.Row="3" RowDefinitions="Auto" ColumnDefinitions="*,*" Grid.ColumnSpan="2" Margin="30,30,30,30">
+
+
+                <Button Text="บันทึก" Grid.Row="0" 
+                     Grid.ColumnSpan="2" Background="#208AE0"
+                     WidthRequest="100" HeightRequest="50"
+                     Clicked="OnSaveButtonClicked"/>
+
+            </Grid>
+                      
+       </Grid>
+    </ScrollView>
+
+</ContentPage> 

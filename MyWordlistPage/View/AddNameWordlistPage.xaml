@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWordlistPage.View.AddNameWordlistPage"
+             Title="My Wordlist">
+
+    <StackLayout  VerticalOptions="Center" Margin="20,0,20,0" Spacing="20">
+        
+        <Border>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="15,15,15,15" />
+            </Border.StrokeShape>
+
+            <Entry Placeholder="ชื่อคลังคำศัพท์ของคุณ" x:Name="entryName"  HeightRequest="60"/>
+
+        </Border>
+        
+        <Button Text="บันทึก" Clicked="OnSaveButtonClicked" 
+                HeightRequest="60" Background="#208AE0" WidthRequest="150"
+                 CornerRadius="20"/>
+    </StackLayout>
+    
+</ContentPage>

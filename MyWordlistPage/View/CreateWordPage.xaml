@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWordlistPage.View.CreateWordPage"
+             Title="My Wordlist">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            Text="+"
+            Clicked="OnAddButtonClicked" />
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- check word in wordlist -->
+        <Label Text="{Binding ExampleProperty}" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="2"
+               VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+
+        <!--Word txt-->
+        <Label Text="คำศัพท์" Grid.Row="0" Grid.Column="0"
+                     FontAttributes="Bold" Background="#208AE0" 
+                     TextColor="White" 
+                     Padding="75,15,0,15"/>
+
+        <!--Meaing txt-->
+        <Label Text="คำแปล" Grid.Row="0" Grid.Column="1"
+                      FontAttributes="Bold" TextColor="White"  Background="#208AE0" 
+                      Padding="85,15,0,15"/>
+
+        <!-- Show word -->
+        <CollectionView ItemsSource="{Binding Words}" Grid.Row="1" Grid.ColumnSpan="2">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding WordText}" HorizontalOptions="Center" />
+                        <Label Grid.Row="1" Grid.Column="0" Text="{Binding Type, StringFormat='( {0} )'}" HorizontalOptions="Center"/>
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Meaning}" HorizontalOptions="Center"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+
+</ContentPage>
